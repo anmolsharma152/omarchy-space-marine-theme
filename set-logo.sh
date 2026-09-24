@@ -3,10 +3,11 @@
 # Zero hardcoded file names — dynamically scans the assets/ folder.
 
 THEME_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+THEME_NAME="$(basename "$THEME_DIR")"
 ASSETS_DIR="$THEME_DIR/assets"
 STATE_DIR="$HOME/.local/state/omarchy"
-INDEX_FILE="$STATE_DIR/astartes-logo-index"
-TIME_FILE="$STATE_DIR/astartes-logo-time"
+INDEX_FILE="$STATE_DIR/${THEME_NAME}-logo-index"
+TIME_FILE="$STATE_DIR/${THEME_NAME}-logo-time"
 FASTFETCH_CONF="$THEME_DIR/fastfetch.jsonc"
 
 mkdir -p "$STATE_DIR"
