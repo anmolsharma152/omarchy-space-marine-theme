@@ -1,0 +1,66 @@
+# ADEPTUS ASTARTES · WARHAMMER 40,000 THEME
+# Macragge Blue, Auric Gold, Cathedral Slate & Purity Crimson
+
+mode = "dark"
+accent = "#E5B53B"
+active_border_color = "#E5B53B"
+active_tab_background = "#2563EB"
+hyprland_active_border = "rgb(E5B53B) rgb(E5B53B) rgb(2563EB) rgb(2563EB) rgb(1E3A8A) rgb(1E3A8A) 45deg"
+hyprland_inactive_border = "rgba(43506877)"
+
+# Cursor colors
+cursor = "#F4F0E4"
+
+# Primary colors
+foreground = "#E2DFD2"
+background = "#0E121B"
+
+# Selection colors
+selection_foreground = "#0E121B"
+selection_background = "#E5B53B"
+
+# Normal colors (ANSI 0-7)
+color0 = "#0E121B"
+color1 = "#C41E3A"
+color2 = "#10B981"
+color3 = "#E5B53B"
+color4 = "#2563EB"
+color5 = "#9333EA"
+color6 = "#38BDF8"
+color7 = "#E2DFD2"
+
+# Bright colors (ANSI 8-15)
+color8 = "#4B5563"
+color9 = "#EF4444"
+color10 = "#34D399"
+color11 = "#FBBF24"
+color12 = "#3B82F6"
+color13 = "#A855F7"
+color14 = "#7DD3FC"
+color15 = "#F9FAFB"
+
+# Omarchy Quattro semantic palette roles
+bg = "#0E121B"
+lighter_bg = "#151B27"
+selection = "#242E42"
+muted = "#4B5563"
+dark_fg = "#9CA3AF"
+fg = "#E2DFD2"
+light_fg = "#ECE9DF"
+bright_fg = "#F9FAFB"
+red = "#C41E3A"
+green = "#10B981"
+yellow = "#E5B53B"
+blue = "#2563EB"
+magenta = "#9333EA"
+cyan = "#38BDF8"
+orange = "#EA580C"
+brown = "#B45309"
+dark_bg = "#0A0D14"
+darker_bg = "#06080C"
+bright_red = "#EF4444"
+bright_green = "#34D399"
+bright_yellow = "#FBBF24"
+bright_blue = "#3B82F6"
+bright_magenta = "#A855F7"
+bright_cyan = "#7DD3FC"

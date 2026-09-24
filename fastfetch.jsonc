@@ -1,0 +1,156 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "/home/omarchy/.config/omarchy/themes/astartes/fastfetch.png",
+    "height": 28,
+    "width": 48,
+    "padding": {
+      "top": 2,
+      "right": 7,
+      "left": 7
+    }
+  },
+  "display": {
+    "disableLinewrap": true
+  },
+  "modules": [
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[33m┌────────────────── Machina & Cogitator ──────────────────┐\u001b[0m"
+    },
+    {
+      "type": "host",
+      "key": " Machina",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "cpu",
+      "key": "│ ├ Processorium",
+      "showPeCoreCount": true,
+      "keyColor": "yellow"
+    },
+    {
+      "type": "gpu",
+      "key": "│ ├ Graphica Optica",
+      "detectionMethod": "pci",
+      "format": "{name}",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "display",
+      "key": "│ ├󱄄 Oculus Speculum",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "disk",
+      "key": "│ ├󰋊 Archivum Sanctum",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "memory",
+      "key": "│ ├ Memoria Cogitatoris",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "swap",
+      "key": "└ └󰓡 Memoria Auxiliaris",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[33m└─────────────────────────────────────────────────────────┘\u001b[0m"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[34m┌──────────────── Spiritus Machinae (OS) ─────────────────┐\u001b[0m"
+    },
+    {
+      "type": "command",
+      "key": "\ue900 Imperium OS",
+      "keyColor": "blue",
+      "text": "version=$(omarchy-version 2>/dev/null || echo '4.0') && echo \"Omarchy $version\""
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰘬 Legio",
+      "keyColor": "blue",
+      "text": "omarchy-version-branch 2>/dev/null || echo 'quattro'"
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰔫 Canalis",
+      "keyColor": "blue",
+      "text": "channel=$(omarchy-version-channel 2>/dev/null || echo 'stable'); echo \"$channel\""
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├ Nucleus Systematis",
+      "keyColor": "blue"
+    },
+    {
+      "type": "wm",
+      "key": "│ ├ Compositor",
+      "keyColor": "blue"
+    },
+    {
+      "type": "terminal",
+      "key": "│ ├ Comm-Link",
+      "keyColor": "blue"
+    },
+    {
+      "type": "packages",
+      "key": "│ ├󰏖 Codices",
+      "keyColor": "blue"
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰸌 Habitus",
+      "keyColor": "blue",
+      "text": "echo -e \"Adeptus Astartes \\e[33m●\\e[34m●\\e[31m●\\e[36m●\\e[37m●\\e[90m●\""
+    },
+    {
+      "type": "terminalfont",
+      "key": "└ └ Scriptura",
+      "keyColor": "blue"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[34m└─────────────────────────────────────────────────────────┘\u001b[0m"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[31m┌──────────────── Tempus & Vigilantia ────────────────────┐\u001b[0m"
+    },
+    {
+      "type": "command",
+      "key": "󱦟 Aetas Operativa",
+      "keyColor": "red",
+      "text": "echo $(( ($(date +%s) - $(stat -c %W / 2>/dev/null || stat -c %Y /)) / 86400 )) days"
+    },
+    {
+      "type": "uptime",
+      "key": "󱫐 Tempus Vigilandi",
+      "keyColor": "red"
+    },
+    {
+      "type": "command",
+      "key": " Benedictio",
+      "keyColor": "red",
+      "text": "updated=$(omarchy-version-pkgs 2>/dev/null || date '+%A, %B %d %Y'); echo \"$updated\""
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[31m└─────────────────────────────────────────────────────────┘\u001b[0m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m       \"IN NOMINE IMPERATORIS · COURAGE AND HONOUR\"\u001b[0m"
+    },
+    "break"
+  ]
+}
