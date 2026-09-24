@@ -39,6 +39,7 @@ echo "$NOW" > "$TIME_FILE"
 # 4. Update fastfetch.jsonc with the dynamically selected asset
 python3 -c "
 import json
+from PIL import Image
 
 conf_path = '$FASTFETCH_CONF'
 selected_asset = '$SELECTED_FILE'
@@ -52,10 +53,21 @@ except Exception:
 if 'logo' not in cfg:
     cfg['logo'] = {}
 
+width = 66
+height = 30
+try:
+    with Image.open(selected_asset) as img:
+        img_w, img_h = img.size
+        if img_h > 0:
+            calc_w = int(round(height * (img_w / img_h) * 2.2))
+            width = max(20, min(66, calc_w))
+except Exception:
+    width = 66
+
 cfg['logo']['type'] = 'auto'
 cfg['logo']['source'] = selected_asset
-cfg['logo']['height'] = 30
-cfg['logo']['width'] = 66
+cfg['logo']['height'] = height
+cfg['logo']['width'] = width
 cfg['logo']['preserveAspectRatio'] = True
 cfg['logo']['recache'] = True
 if 'padding' not in cfg['logo']:
