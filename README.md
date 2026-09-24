@@ -78,9 +78,9 @@ Fastfetch is configured to emulate an imperial **Cogitator Sanctus**:
 
 ## Wallpapers Included (`backgrounds/`)
 
-Cycle through all 22 wallpapers at any time with `Super + Ctrl + Space`:
+Cycle through all 29 wallpapers at any time with `Super + Ctrl + Space`:
 
-| Index | Title | Resolution | Description |
+| Index | Title | Resolution | Source / Description |
 | :--- | :--- | :--- | :--- |
 | `00` | `00-titus-righteous-stand.jpg` | 1920×1080 | Captain Titus holding ground in rain and ash |
 | `01` | `01-titus-close-up-cinematic.jpg` | 2560×1440 | High-intensity cinematic close-up of Titus |
@@ -92,7 +92,6 @@ Cycle through all 22 wallpapers at any time with `Super + Ctrl + Space`:
 | `07` | `07-astartes-battlefield.jpg` | 1920×1080 | Panoramic battlefield view |
 | `08` | `08-titus-portrait-glare.jpg` | 2560×1440 | Captain Demetrian Titus intense battle-scarred glare |
 | `09` | `09-titus-combat-stance.png` | 2560×1440 | Heavy weapon combat ready stance |
-| `10` | `10-imperium-grand-march-4k.jpg` | 4000×2459 | Grand cathedral march of the Space Marines (4K) |
 | `11` | `11-gothic-cathedral-void-4k.jpg`| 3840×2160 | Cathedral in the stars overlooking void warfare (4K) |
 | `12` | `12-astartes-terminator-assault-4k.jpg` | 3840×2160 | Crux Terminatus heavy assault squad (4K) |
 | `13` | `13-battle-barge-broadside-8k.jpg` | 7680×4320 | Colossal Battle Barge firing broadsides in orbit (8K) |
@@ -104,6 +103,32 @@ Cycle through all 22 wallpapers at any time with `Super + Ctrl + Space`:
 | `19` | `19-sm2-swarms-incoming.jpg` | 2048×1152 | Bio-titans and swarms descending on the battle line |
 | `20` | `20-sm2-demetrian-titus-advance.jpg` | 2048×1152 | Titus advancing forward under heavy bolter barrage |
 | `21` | `21-sm2-orbital-descent.jpg` | 2048×1152 | Drop pods descending through burning clouds |
+| `22` | `22-secret-level-astartes-lineup.jpg` | 3840×2160 | *Secret Level* (Blur Studio) Ultramarines squad march |
+| `23` | `23-secret-level-titus-drop-5k.jpg` | 5120×2880 | *Secret Level* 5K Titus combat descent |
+| `24` | `24-secret-level-chaos-incursion-5k.jpg` | 5120×2879 | *Secret Level* 5K Chaos incursion showdown |
+| `25` | `25-tithes-sakan-sacrifice-4k.jpg` | 3840×2160 | *The Tithes* Ep 1 "Sacrifice" Sa'kan & Apothecary (4K) |
+| `26` | `26-tithes-silent-sisterhood-4k.jpg` | 3840×2160 | *The Tithes* Ep 2 "Harvest" Sisters of Silence & Black Ship (4K) |
+| `27` | `27-tithes-kasrkin-trench-war-4k.jpg` | 3840×2160 | *The Tithes* Ep 3 "Bullets" Kasrkin trench line (4K) |
+| `28` | `28-pariah-nexus-szeras-awakening-4k.jpg` | 3840×2160 | *Pariah Nexus* Illuminor Szeras & Necron awakening (4K) |
+| `29` | `29-pariah-nexus-sakan-wrath-qhd.jpg` | 2560×1440 | *Pariah Nexus* Salamander Sa'kan wrath (QHD) |
+| `30` | `30-pariah-nexus-sister-danica-fhd.jpg` | 1920×1080 | *Pariah Nexus* Sister Danica battle prayer (FHD) |
+
+---
+
+## Rotating Fastfetch Assets (`assets/`)
+
+The Fastfetch cogitator automatically rotates through 5 curated, transparent Imperium assets on each execution with calibrated geometry to prevent distortion and eliminate blank space:
+
+1. **`01-titus-space-marine-2.png`** (894×894) — Captain Titus combat bust with chainsword
+2. **`02-imperial-aquila-gold.png`** (600×600) — Imperial Aquila relic emblem in auric gold
+3. **`03-space-marine-helmet.png`** (920×1271) — Space Marine Veteran in Mk VI armor with bolter
+4. **`04-ultramarines-chapter-crest.png`** (920×902) — Ultramarines Chapter Heraldry Crest
+5. **`05-titus-classic-portrait.png`** (500×500) — Captain Titus battle-scarred combat bust
+
+- **Auto-rotation:** Executed automatically whenever `fastfetch` is invoked in the terminal.
+- **Manual selector:** `./set-logo.sh <1-5>` allows pinning any specific asset.
+- **Manual cycle:** `./rotate-logo.sh` advances immediately to the next asset.
+
 
 ---
 
