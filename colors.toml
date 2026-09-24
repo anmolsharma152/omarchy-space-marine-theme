@@ -2,10 +2,10 @@
 # Macragge Blue, Auric Gold, Cathedral Slate & Purity Crimson
 
 mode = "dark"
-accent = "#E5B53B"
-active_border_color = "#E5B53B"
+accent = "#2563EB"
+active_border_color = "#2563EB"
 active_tab_background = "#2563EB"
-hyprland_active_border = "rgb(E5B53B) rgb(E5B53B) rgb(2563EB) rgb(2563EB) rgb(1E3A8A) rgb(1E3A8A) 45deg"
+hyprland_active_border = "rgb(38BDF8) rgb(2563EB) rgb(1E3A8A) 45deg"
 hyprland_inactive_border = "rgba(43506877)"
 
 # Cursor colors

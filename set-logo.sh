@@ -1,63 +1,93 @@
 #!/bin/bash
-# Helper script to manually pick Fastfetch logo assets with calibrated dimensions
+# Sets Fastfetch logo to a specific asset index (1-6)
 
 THEME_DIR="$HOME/.config/omarchy/themes/astartes"
 FASTFETCH_CONF="$THEME_DIR/fastfetch.jsonc"
 
-case "$1" in
-  1|"titus2"|"titus")
-    ASSET="01-titus-space-marine-2.png"
-    ROWS=30
-    COLS=66
-    TITLE="Captain Titus (Space Marine 2 Combat Bust)"
-    ;;
-  2|"aquila"|"eagle")
-    ASSET="02-imperial-aquila-gold.png"
-    ROWS=30
-    COLS=66
-    TITLE="Imperial Aquila (Relic Gold Emblem)"
-    ;;
-  3|"veteran"|"helmet")
-    ASSET="03-space-marine-helmet.png"
-    ROWS=30
-    COLS=45
-    TITLE="Space Marine Veteran (Mk VI Armor & Bolter)"
-    ;;
-  4|"crest"|"ultramarine")
-    ASSET="04-ultramarines-chapter-crest.png"
-    ROWS=30
-    COLS=66
-    TITLE="Ultramarines Chapter Heraldry Crest"
-    ;;
-  5|"classic"|"titus-veteran")
-    ASSET="05-titus-classic-portrait.png"
-    ROWS=30
-    COLS=66
-    TITLE="Captain Titus (Battle-Scarred Veteran Bust)"
-    ;;
-  *)
-    echo "Usage: ./set-logo.sh <1-5>"
-    echo "  1: Captain Titus (Space Marine 2 Combat Bust)"
-    echo "  2: Imperial Aquila (Relic Gold Emblem)"
-    echo "  3: Space Marine Veteran (Mk VI Armor & Bolter)"
-    echo "  4: Ultramarines Chapter Heraldry Crest"
-    echo "  5: Captain Titus (Battle-Scarred Veteran Bust)"
+idx="$1"
+if [[ -z "$idx" || "$idx" -lt 1 || "$idx" -gt 6 ]]; then
+    echo "Usage: $0 <1-6>"
+    echo "  1: Titus (Space Marine 2)"
+    echo "  2: Imperial Aquila (Gold)"
+    echo "  3: Space Marine Helmet"
+    echo "  4: Titus Close-up (Space Marine 2)"
+    echo "  5: Demetrian Titus (Classic Portrait)"
+    echo "  6: Blood Angels Space Marine"
     exit 1
-    ;;
-esac
-
-cp "$THEME_DIR/assets/$ASSET" "$THEME_DIR/fastfetch.png"
+fi
 
 python3 -c "
 import json
-path = '$FASTFETCH_CONF'
-with open(path) as f:
+
+conf_path = '$FASTFETCH_CONF'
+theme_dir = '$THEME_DIR'
+idx = $idx
+
+with open(conf_path) as f:
     cfg = json.load(f)
-cfg['logo']['height'] = $ROWS
-cfg['logo']['width'] = $COLS
-cfg['logo']['preserveAspectRatio'] = True
-with open(path, 'w') as f:
+
+if idx == 1:
+    cfg['logo'] = {
+        'type': 'auto',
+        'source': f'{theme_dir}/assets/01-titus-space-marine-2.png',
+        'height': 30,
+        'width': 66,
+        'padding': {'top': 1, 'right': 5, 'left': 5},
+        'preserveAspectRatio': True,
+        'recache': True
+    }
+elif idx == 2:
+    cfg['logo'] = {
+        'type': 'auto',
+        'source': f'{theme_dir}/assets/02-imperial-aquila-gold.png',
+        'height': 30,
+        'width': 66,
+        'padding': {'top': 1, 'right': 5, 'left': 5},
+        'preserveAspectRatio': True,
+        'recache': True
+    }
+elif idx == 3:
+    cfg['logo'] = {
+        'type': 'auto',
+        'source': f'{theme_dir}/assets/03-space-marine-helmet.png',
+        'height': 30,
+        'width': 45,
+        'padding': {'top': 1, 'right': 5, 'left': 5},
+        'preserveAspectRatio': True,
+        'recache': True
+    }
+elif idx == 4:
+    cfg['logo'] = {
+        'type': 'auto',
+        'source': f'{theme_dir}/assets/04_titus_nico.png',
+        'height': 30,
+        'width': 66,
+        'padding': {'top': 1, 'right': 5, 'left': 5},
+        'preserveAspectRatio': True,
+        'recache': True
+    }
+elif idx == 5:
+    cfg['logo'] = {
+        'type': 'auto',
+        'source': f'{theme_dir}/assets/05-titus-classic-portrait.png',
+        'height': 30,
+        'width': 66,
+        'padding': {'top': 1, 'right': 5, 'left': 5},
+        'preserveAspectRatio': True,
+        'recache': True
+    }
+elif idx == 6:
+    cfg['logo'] = {
+        'type': 'auto',
+        'source': f'{theme_dir}/assets/06-red-space-marine.png',
+        'height': 30,
+        'width': 45,
+        'padding': {'top': 1, 'right': 5, 'left': 5},
+        'preserveAspectRatio': True,
+        'recache': True
+    }
+
+with open(conf_path, 'w') as f:
     json.dump(cfg, f, indent=2)
 "
-
-echo "Deployed $TITLE as Fastfetch logo ($ROWS rows x $COLS cols)."
+echo "Astartes Fastfetch logo set to asset $idx"

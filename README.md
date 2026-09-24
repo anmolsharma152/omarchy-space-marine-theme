@@ -103,30 +103,30 @@ Cycle through all 29 wallpapers at any time with `Super + Ctrl + Space`:
 | `19` | `19-sm2-swarms-incoming.jpg` | 2048×1152 | Bio-titans and swarms descending on the battle line |
 | `20` | `20-sm2-demetrian-titus-advance.jpg` | 2048×1152 | Titus advancing forward under heavy bolter barrage |
 | `21` | `21-sm2-orbital-descent.jpg` | 2048×1152 | Drop pods descending through burning clouds |
-| `22` | `22-secret-level-astartes-lineup.jpg` | 3840×2160 | *Secret Level* (Blur Studio) Ultramarines squad march |
-| `23` | `23-secret-level-titus-drop-5k.jpg` | 5120×2880 | *Secret Level* 5K Titus combat descent |
-| `24` | `24-secret-level-chaos-incursion-5k.jpg` | 5120×2879 | *Secret Level* 5K Chaos incursion showdown |
-| `25` | `25-tithes-sakan-sacrifice-4k.jpg` | 3840×2160 | *The Tithes* Ep 1 "Sacrifice" Sa'kan & Apothecary (4K) |
-| `26` | `26-tithes-silent-sisterhood-4k.jpg` | 3840×2160 | *The Tithes* Ep 2 "Harvest" Sisters of Silence & Black Ship (4K) |
-| `27` | `27-tithes-kasrkin-trench-war-4k.jpg` | 3840×2160 | *The Tithes* Ep 3 "Bullets" Kasrkin trench line (4K) |
-| `28` | `28-pariah-nexus-szeras-awakening-4k.jpg` | 3840×2160 | *Pariah Nexus* Illuminor Szeras & Necron awakening (4K) |
-| `29` | `29-pariah-nexus-sakan-wrath-qhd.jpg` | 2560×1440 | *Pariah Nexus* Salamander Sa'kan wrath (QHD) |
-| `30` | `30-pariah-nexus-sister-danica-fhd.jpg` | 1920×1080 | *Pariah Nexus* Sister Danica battle prayer (FHD) |
+| `22` | `22-secret-level-tzeentch-incursion-4k.jpg` | 3840×1920 | *Secret Level* Ep 5 (Blur Studio) Iron Halo shield vs Lord of Change |
+| `23` | `23-secret-level-astartes-defiance-4k.jpg` | 3840×1920 | *Secret Level* Ep 5 (Blur Studio) Laurel-wreathed Sergeant facing Daemonic talon |
+| `24` | `24-tithes-sakan-strike-4k.jpg` | 3840×1636 | *The Tithes* Sa'kan combat knife execution of Necron warrior (4K, zero letterbox) |
+| `25` | `25-tithes-tomb-assault-4k.jpg` | 3840×1636 | *The Tithes* Sa'kan & Apothecary Biologis rushing Necron tomb corridor (4K, zero letterbox) |
+| `26` | `26-tithes-necrons-advance-4k.jpg` | 3840×1636 | *The Tithes* Necron legion and hovering monoliths emerging from mist (4K, zero letterbox) |
+| `27` | `27-pariah-nexus-danica-cathedral-4k.jpg` | 3840×1632 | *Pariah Nexus* Sister Danica in ruined gothic cathedral (4K, zero letterbox) |
+| `28` | `28-pariah-nexus-cadian-recon-4k.jpg` | 3840×1632 | *Pariah Nexus* Cadian Astra Militarum patrol in foggy ruins (4K, zero letterbox) |
+| `29` | `29-pariah-nexus-canoness-plasma-4k.jpg` | 3840×1632 | *Pariah Nexus* Canoness / Sister Superior with glowing plasma pistol (4K, zero letterbox) |
 
 ---
 
 ## Rotating Fastfetch Assets (`assets/`)
 
-The Fastfetch cogitator automatically rotates through 5 curated, transparent Imperium assets on each execution with calibrated geometry to prevent distortion and eliminate blank space:
+The Fastfetch cogitator automatically rotates through 6 curated, transparent Imperium assets on each execution with calibrated geometry to prevent distortion and eliminate blank space:
 
 1. **`01-titus-space-marine-2.png`** (894×894) — Captain Titus combat bust with chainsword
 2. **`02-imperial-aquila-gold.png`** (600×600) — Imperial Aquila relic emblem in auric gold
 3. **`03-space-marine-helmet.png`** (920×1271) — Space Marine Veteran in Mk VI armor with bolter
-4. **`04-ultramarines-chapter-crest.png`** (920×902) — Ultramarines Chapter Heraldry Crest
+4. **`04_titus_nico.png`** (890×863) — Captain Titus intense cinematic portrait
 5. **`05-titus-classic-portrait.png`** (500×500) — Captain Titus battle-scarred combat bust
+6. **`06-red-space-marine.png`** (804×1091) — Blood Angels Space Marine in full battle plate
 
-- **Auto-rotation:** Executed automatically whenever `fastfetch` is invoked in the terminal.
-- **Manual selector:** `./set-logo.sh <1-5>` allows pinning any specific asset.
+- **Auto-rotation:** Executed automatically whenever `fastfetch` is invoked in Bash / terminal.
+- **Manual selector:** `./set-logo.sh <1-6>` allows pinning any specific asset.
 - **Manual cycle:** `./rotate-logo.sh` advances immediately to the next asset.
 
 
