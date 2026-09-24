@@ -4,7 +4,7 @@
 
 #box {
   background: rgba(14, 18, 27, 0.95);
-  border: 2px solid #E5B53B;
+  border: 2px solid #2563EB;
   border-radius: 12px;
   padding: 12px;
 }
@@ -12,7 +12,7 @@
 #search {
   color: #E2DFD2;
   background: rgba(21, 27, 39, 0.9);
-  border: 1px solid rgba(229, 181, 59, 0.4);
+  border: 1px solid rgba(56, 189, 248, 0.4);
   border-radius: 8px;
 }
 
@@ -25,5 +25,5 @@
 #item:selected {
   background: rgba(37, 99, 235, 0.25);
   color: #F9FAFB;
-  border-left: 3px solid #E5B53B;
+  border-left: 3px solid #38BDF8;
 }

@@ -1,8 +1,8 @@
 # Adeptus Astartes Shell Configuration
 # Omarchy Quattro Native Presentation
 
-active-border = "rgb(E5B53B) rgb(E5B53B) rgb(2563EB) rgb(2563EB) rgb(1E3A8A) rgb(1E3A8A) 45deg"
-active-border-foreground = "rgb(E5B53B) rgb(E5B53B) rgb(2563EB) rgb(2563EB) 45deg"
+active-border = "rgb(38BDF8) rgb(38BDF8) rgb(2563EB) rgb(2563EB) rgb(1E3A8A) rgb(1E3A8A) 45deg"
+active-border-foreground = "rgb(38BDF8) rgb(38BDF8) rgb(2563EB) rgb(2563EB) 45deg"
 
 [controls]
 normal-color        = "#E2DFD2"

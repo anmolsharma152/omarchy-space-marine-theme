@@ -1,7 +1,7 @@
 window {
   background: rgba(14, 18, 27, 0.94);
   border-radius: 12px;
-  border: 2px solid #E5B53B;
+  border: 2px solid #2563EB;
 }
 
 progressbar:disabled,
@@ -27,7 +27,7 @@ progress {
   min-height: 6px;
   border-radius: 999px;
   border: none;
-  background: #E5B53B;
+  background: #38BDF8;
 }
 
 label {
@@ -35,5 +35,5 @@ label {
 }
 
 image {
-  color: #E5B53B;
+  color: #38BDF8;
 }

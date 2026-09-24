@@ -1,5 +1,5 @@
 #!/bin/bash
-# Select and pin a specific Fastfetch logo dynamically from the assets/ folder.
+# Dynamically rotates Fastfetch logo across whatever files exist in the assets/ directory.
 # Zero hardcoded file names — dynamically scans the assets/ folder.
 
 THEME_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -11,31 +11,32 @@ FASTFETCH_CONF="$THEME_DIR/fastfetch.jsonc"
 
 mkdir -p "$STATE_DIR"
 
+# 1. Dynamically discover all image assets in the assets/ folder (sorted)
 mapfile -t ASSETS < <(find "$ASSETS_DIR" -maxdepth 1 -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.webp" \) | sort)
 COUNT=${#ASSETS[@]}
 
 if (( COUNT == 0 )); then
-    echo "No assets found in $ASSETS_DIR"
-    exit 1
+    exit 0
 fi
 
-target="$1"
+# 2. Debounce check (300ms) to prevent double-invocation from stale shell wrappers
+NOW=$(date +%s%3N 2>/dev/null || date +%s)
+LAST_TIME=$(cat "$TIME_FILE" 2>/dev/null || echo 0)
+DIFF=$(( NOW - LAST_TIME ))
 
-if [[ -z "$target" || "$target" -lt 1 || "$target" -gt "$COUNT" ]]; then
-    echo "Usage: $0 <1-$COUNT>"
-    echo "Available assets in assets/:"
-    for i in "${!ASSETS[@]}"; do
-        idx=$(( i + 1 ))
-        fname=$(basename "${ASSETS[$i]}")
-        echo "  $idx: $fname"
-    done
-    exit 1
+if (( DIFF >= 0 && DIFF < 300 )); then
+    exit 0
 fi
 
-SELECTED_FILE="${ASSETS[$(( target - 1 ))]}"
-echo "$target" > "$INDEX_FILE"
-echo "0" > "$TIME_FILE"
+# 3. Calculate next index
+CURRENT_IDX=$(cat "$INDEX_FILE" 2>/dev/null || echo 0)
+NEXT_IDX=$(( (CURRENT_IDX % COUNT) + 1 ))
+SELECTED_FILE="${ASSETS[$(( NEXT_IDX - 1 ))]}"
 
+echo "$NEXT_IDX" > "$INDEX_FILE"
+echo "$NOW" > "$TIME_FILE"
+
+# 4. Update fastfetch.jsonc with the dynamically selected asset
 python3 -c "
 import json
 
@@ -63,5 +64,3 @@ if 'padding' not in cfg['logo']:
 with open(conf_path, 'w') as f:
     json.dump(cfg, f, indent=2)
 "
-
-echo "Fastfetch logo set to asset $target: $(basename "$SELECTED_FILE")"

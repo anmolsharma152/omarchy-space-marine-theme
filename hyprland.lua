@@ -2,7 +2,7 @@
 -- Imperial Auric Gold, Macragge Blue and Ceramite Slate
 
 local activeBorderColor = {
-	colors = { "rgb(E5B53B)", "rgb(E5B53B)", "rgb(2563EB)", "rgb(2563EB)", "rgb(1E3A8A)", "rgb(1E3A8A)" },
+	colors = { "rgb(38BDF8)", "rgb(38BDF8)", "rgb(2563EB)", "rgb(2563EB)", "rgb(1E3A8A)", "rgb(1E3A8A)" },
 	angle = 45,
 }
 local inactiveBorderColor = "rgba(43506877)"
