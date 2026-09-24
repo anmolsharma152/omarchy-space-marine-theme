@@ -3,6 +3,8 @@
 
 mode = "dark"
 accent = "#2563EB"
+border = "#2563EB"
+comment = "#4B5563"
 active_border_color = "#FBBF24"
 active_tab_background = "#2563EB"
 hyprland_active_border = "rgb(FBBF24) rgb(D97706) rgb(2563EB) rgb(1E3A8A) 45deg"
