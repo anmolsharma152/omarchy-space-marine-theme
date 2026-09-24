@@ -3,7 +3,7 @@
 
 mode = "dark"
 accent = "#2563EB"
-border = "#2563EB"
+border = "#FBBF24"
 comment = "#4B5563"
 active_border_color = "#FBBF24"
 active_tab_background = "#2563EB"
