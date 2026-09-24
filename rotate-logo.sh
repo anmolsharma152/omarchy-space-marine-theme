@@ -1,10 +1,10 @@
 #!/bin/bash
-# Dynamically rotates Fastfetch logo across whatever files exist in the assets/ directory.
-# Zero hardcoded file names — dynamically scans the assets/ folder.
+# Dynamically rotates Fastfetch logo across whatever files exist in the fastfetch-logos/ directory.
+# Zero hardcoded file names — dynamically scans the fastfetch-logos/ folder.
 
 THEME_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 THEME_NAME="$(basename "$THEME_DIR")"
-ASSETS_DIR="$THEME_DIR/assets"
+ASSETS_DIR="$THEME_DIR/fastfetch-logos"
 STATE_DIR="$HOME/.local/state/omarchy"
 INDEX_FILE="$STATE_DIR/${THEME_NAME}-logo-index"
 TIME_FILE="$STATE_DIR/${THEME_NAME}-logo-time"

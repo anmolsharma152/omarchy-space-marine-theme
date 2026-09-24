@@ -32,8 +32,8 @@ Or open the graphical Omarchy theme picker with `Super + Alt + Space` (Style > T
 
 - **Pure Omarchy Quattro Architecture:** Built natively with `colors.toml` and `shell.toml` for the unified `omarchy-shell`. Zero legacy bloat, zero deprecated daemons.
 - **High Gothic Fastfetch Cogitator:** Custom Fastfetch layout featuring Latin cogitator terminology, system diagnostic telemetry, and color badges.
-- **Dynamic Asset Cycler:** Rotates through all image assets in `assets/` automatically on each `fastfetch` call without distortion or horizontal stretching.
-- **Manual Asset Pinning:** Pin any logo from `assets/` on demand using `./set-logo.sh <1-N>`.
+- **Dynamic Asset Cycler:** Rotates through all image logos in `fastfetch-logos/` automatically on each `fastfetch` call without distortion or horizontal stretching.
+- **Manual Asset Pinning:** Pin any logo from `fastfetch-logos/` on demand using `./set-logo.sh <1-N>`.
 - **Luminous Window Geometry:** Dynamic polished **Imperial Auric Gold** into **Macragge Blue** gradient active window borders (`rgb(FBBF24) rgb(D97706) rgb(2563EB) rgb(1E3A8A) 45deg`) for unmistakable active window focus across dark and light backgrounds.
 - **Cinematic Wallpapers:** Curated collection of high-resolution 4K/QHD wallpapers featuring Captain Titus, combat drops, hive cities, and gothic cathedrals.
 - **Full Disk Encryption & Lock Signet:** Bundled with the Imperial Aquila as `unlock.png` for Plymouth full disk encryption boot splash and lock screen authentication.
@@ -91,13 +91,13 @@ Fastfetch is styled as an Imperial **Cogitator Sanctus**:
        "IN NOMINE IMPERATORIS · COURAGE AND HONOUR"
 ```
 
-### Rotating Logo Assets (`assets/`)
+### Rotating Logo Assets (`fastfetch-logos/`)
 
-The cogitator dynamically discovers all images in `assets/` and cycles through them sequentially on each invocation:
+The cogitator dynamically discovers all images in `fastfetch-logos/` and cycles through them sequentially on each invocation:
 
 - **Automatic Cycle:** Cycles automatically every time `fastfetch` runs in your terminal.
-- **Manual Pinning:** Run `./set-logo.sh` to see all available assets and pin any one by index (e.g. `./set-logo.sh 1`).
-- **Dynamic Extensibility:** Drop any `.png` or `.jpg` into `assets/`—it will be automatically discovered and scaled with zero distortion.
+- **Manual Pinning:** Run `./set-logo.sh` to see all available logos and pin any one by index (e.g. `./set-logo.sh 1`).
+- **Dynamic Extensibility:** Drop any `.png` or `.jpg` into `fastfetch-logos/`—it will be automatically discovered and scaled with zero distortion.
 
 ---
 

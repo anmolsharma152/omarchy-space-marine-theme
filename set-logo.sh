@@ -1,10 +1,10 @@
 #!/bin/bash
-# Select and pin a specific Fastfetch logo dynamically from the assets/ folder.
-# Zero hardcoded file names — dynamically scans the assets/ folder.
+# Select and pin a specific Fastfetch logo dynamically from the fastfetch-logos/ folder.
+# Zero hardcoded file names — dynamically scans the fastfetch-logos/ folder.
 
 THEME_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 THEME_NAME="$(basename "$THEME_DIR")"
-ASSETS_DIR="$THEME_DIR/assets"
+ASSETS_DIR="$THEME_DIR/fastfetch-logos"
 STATE_DIR="$HOME/.local/state/omarchy"
 INDEX_FILE="$STATE_DIR/${THEME_NAME}-logo-index"
 TIME_FILE="$STATE_DIR/${THEME_NAME}-logo-time"
@@ -24,7 +24,7 @@ target="$1"
 
 if [[ -z "$target" || "$target" -lt 1 || "$target" -gt "$COUNT" ]]; then
     echo "Usage: $0 <1-$COUNT>"
-    echo "Available assets in assets/:"
+    echo "Available logos in fastfetch-logos/:"
     for i in "${!ASSETS[@]}"; do
         idx=$(( i + 1 ))
         fname=$(basename "${ASSETS[$i]}")
