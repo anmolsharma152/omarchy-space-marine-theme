@@ -9,7 +9,8 @@
       "top": 2,
       "right": 7,
       "left": 7
-    }
+    },
+    "preserveAspectRatio": true
   },
   "display": {
     "disableLinewrap": true
@@ -19,54 +20,54 @@
     "break",
     {
       "type": "custom",
-      "format": "\u001b[33m┌────────────────── Machina & Cogitator ──────────────────┐\u001b[0m"
+      "format": "\u001b[33m\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 Machina & Cogitator \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\u001b[0m"
     },
     {
       "type": "host",
-      "key": " Machina",
+      "key": "\uf109 Machina",
       "keyColor": "yellow"
     },
     {
       "type": "cpu",
-      "key": "│ ├ Processorium",
+      "key": "\u2502 \u251c\uf4bc Processorium",
       "showPeCoreCount": true,
       "keyColor": "yellow"
     },
     {
       "type": "gpu",
-      "key": "│ ├ Graphica Optica",
+      "key": "\u2502 \u251c\ue266 Graphica Optica",
       "detectionMethod": "pci",
       "format": "{name}",
       "keyColor": "yellow"
     },
     {
       "type": "display",
-      "key": "│ ├󱄄 Oculus Speculum",
+      "key": "\u2502 \u251c\udb84\udd04 Oculus Speculum",
       "keyColor": "yellow"
     },
     {
       "type": "disk",
-      "key": "│ ├󰋊 Archivum Sanctum",
+      "key": "\u2502 \u251c\udb80\udeca Archivum Sanctum",
       "keyColor": "yellow"
     },
     {
       "type": "memory",
-      "key": "│ ├ Memoria Cogitatoris",
+      "key": "\u2502 \u251c\uefc5 Memoria Cogitatoris",
       "keyColor": "yellow"
     },
     {
       "type": "swap",
-      "key": "└ └󰓡 Memoria Auxiliaris",
+      "key": "\u2514 \u2514\udb81\udce1 Memoria Auxiliaris",
       "keyColor": "yellow"
     },
     {
       "type": "custom",
-      "format": "\u001b[33m└─────────────────────────────────────────────────────────┘\u001b[0m"
+      "format": "\u001b[33m\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\u001b[0m"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[34m┌──────────────── Spiritus Machinae (OS) ─────────────────┐\u001b[0m"
+      "format": "\u001b[34m\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 Spiritus Machinae (OS) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\u001b[0m"
     },
     {
       "type": "command",
@@ -76,80 +77,80 @@
     },
     {
       "type": "command",
-      "key": "│ ├󰘬 Legio",
+      "key": "\u2502 \u251c\udb81\ude2c Legio",
       "keyColor": "blue",
       "text": "omarchy-version-branch 2>/dev/null || echo 'quattro'"
     },
     {
       "type": "command",
-      "key": "│ ├󰔫 Canalis",
+      "key": "\u2502 \u251c\udb81\udd2b Canalis",
       "keyColor": "blue",
       "text": "channel=$(omarchy-version-channel 2>/dev/null || echo 'stable'); echo \"$channel\""
     },
     {
       "type": "kernel",
-      "key": "│ ├ Nucleus Systematis",
+      "key": "\u2502 \u251c\uf013 Nucleus Systematis",
       "keyColor": "blue"
     },
     {
       "type": "wm",
-      "key": "│ ├ Compositor",
+      "key": "\u2502 \u251c\uf488 Compositor",
       "keyColor": "blue"
     },
     {
       "type": "terminal",
-      "key": "│ ├ Comm-Link",
+      "key": "\u2502 \u251c\uf489 Comm-Link",
       "keyColor": "blue"
     },
     {
       "type": "packages",
-      "key": "│ ├󰏖 Codices",
+      "key": "\u2502 \u251c\udb80\udfd6 Codices",
       "keyColor": "blue"
     },
     {
       "type": "command",
-      "key": "│ ├󰸌 Habitus",
+      "key": "\u2502 \u251c\udb83\ude0c Habitus",
       "keyColor": "blue",
-      "text": "echo -e \"Adeptus Astartes \\e[33m●\\e[34m●\\e[31m●\\e[36m●\\e[37m●\\e[90m●\""
+      "text": "echo -e \"Adeptus Astartes \\e[33m\u25cf\\e[34m\u25cf\\e[31m\u25cf\\e[36m\u25cf\\e[37m\u25cf\\e[90m\u25cf\""
     },
     {
       "type": "terminalfont",
-      "key": "└ └ Scriptura",
+      "key": "\u2514 \u2514\uf031 Scriptura",
       "keyColor": "blue"
     },
     {
       "type": "custom",
-      "format": "\u001b[34m└─────────────────────────────────────────────────────────┘\u001b[0m"
+      "format": "\u001b[34m\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\u001b[0m"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[31m┌──────────────── Tempus & Vigilantia ────────────────────┐\u001b[0m"
+      "format": "\u001b[31m\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 Tempus & Vigilantia \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\u001b[0m"
     },
     {
       "type": "command",
-      "key": "󱦟 Aetas Operativa",
+      "key": "\udb86\udd9f Aetas Operativa",
       "keyColor": "red",
       "text": "echo $(( ($(date +%s) - $(stat -c %W / 2>/dev/null || stat -c %Y /)) / 86400 )) days"
     },
     {
       "type": "uptime",
-      "key": "󱫐 Tempus Vigilandi",
+      "key": "\udb86\uded0 Tempus Vigilandi",
       "keyColor": "red"
     },
     {
       "type": "command",
-      "key": " Benedictio",
+      "key": "\ueb29 Benedictio",
       "keyColor": "red",
       "text": "updated=$(omarchy-version-pkgs 2>/dev/null || date '+%A, %B %d %Y'); echo \"$updated\""
     },
     {
       "type": "custom",
-      "format": "\u001b[31m└─────────────────────────────────────────────────────────┘\u001b[0m"
+      "format": "\u001b[31m\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\u001b[0m"
     },
     {
       "type": "custom",
-      "format": "\u001b[90m       \"IN NOMINE IMPERATORIS · COURAGE AND HONOUR\"\u001b[0m"
+      "format": "\u001b[90m       \"IN NOMINE IMPERATORIS \u00b7 COURAGE AND HONOUR\"\u001b[0m"
     },
     "break"
   ]
