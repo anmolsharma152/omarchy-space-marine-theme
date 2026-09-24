@@ -3,12 +3,12 @@
   "logo": {
     "type": "auto",
     "source": "/home/omarchy/.config/omarchy/themes/astartes/fastfetch.png",
-    "height": 28,
+    "height": 22,
     "width": 48,
     "padding": {
       "top": 2,
-      "right": 7,
-      "left": 7
+      "right": 6,
+      "left": 6
     },
     "preserveAspectRatio": true
   },
