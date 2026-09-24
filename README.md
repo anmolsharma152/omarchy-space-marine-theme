@@ -58,6 +58,8 @@ Or open the graphical Omarchy theme picker with `Super + Alt + Space` (Style > T
 
 ## High Gothic Fastfetch Cogitator
 
+![High Gothic Fastfetch Cogitator](fastfetch-preview.png)
+
 Fastfetch is styled as an Imperial **Cogitator Sanctus**:
 
 ```text
