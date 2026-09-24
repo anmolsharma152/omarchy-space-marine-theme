@@ -3,9 +3,9 @@
 
 mode = "dark"
 accent = "#2563EB"
-active_border_color = "#2563EB"
+active_border_color = "#FBBF24"
 active_tab_background = "#2563EB"
-hyprland_active_border = "rgb(38BDF8) rgb(2563EB) rgb(1E3A8A) 45deg"
+hyprland_active_border = "rgb(FBBF24) rgb(D97706) rgb(2563EB) rgb(1E3A8A) 45deg"
 hyprland_inactive_border = "rgba(43506877)"
 
 # Cursor colors
