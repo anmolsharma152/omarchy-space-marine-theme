@@ -1,3 +1,8 @@
 .DS_Store
 *.tmp
 *.bak
+
+# Local overrides for Kitty / Ghostty image cycling (kept locally, ignored from upstream)
+fastfetch-logos/
+rotate-logo.sh
+set-logo.sh
