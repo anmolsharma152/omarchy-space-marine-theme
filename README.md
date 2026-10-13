@@ -56,8 +56,6 @@ Or open the graphical Omarchy theme picker with `Super + Alt + Space` (Style > T
 
 ## High Gothic Fastfetch Cogitator
 
-![High Gothic Fastfetch Cogitator](fastfetch-preview.png)
-
 Fastfetch is styled as an Imperial **Cogitator Sanctus**:
 
 ```text
@@ -104,38 +102,38 @@ omarchy theme bg next
 
 | **00 · Righteous Stand** | **01 · Cinematic Close-Up** | **03 · Ultramarine Squad** |
 | :---: | :---: | :---: |
-| <img src="backgrounds/00-titus-righteous-stand.jpg" width="280" alt="Righteous Stand" /> | <img src="backgrounds/01-titus-close-up-cinematic.jpg" width="280" alt="Cinematic Close-Up" /> | <img src="backgrounds/03-space-marine-squad-4k.jpg" width="280" alt="Ultramarine Squad" /> |
+| <img src="backgrounds/00-titus-righteous-stand.webp" width="280" alt="Righteous Stand" /> | <img src="backgrounds/01-titus-close-up-cinematic.webp" width="280" alt="Cinematic Close-Up" /> | <img src="backgrounds/03-space-marine-squad-4k.webp" width="280" alt="Ultramarine Squad" /> |
 | **04 · Void Assault** | **05 · Cathedral Battle** | **13 · Battle Barge Broadside** |
-| <img src="backgrounds/04-void-assault-4k.jpg" width="280" alt="Void Assault" /> | <img src="backgrounds/05-cathedral-battle-4k.jpg" width="280" alt="Cathedral Battle" /> | <img src="backgrounds/13-battle-barge-broadside-8k.jpg" width="280" alt="Battle Barge Broadside" /> |
+| <img src="backgrounds/04-void-assault-4k.webp" width="280" alt="Void Assault" /> | <img src="backgrounds/05-cathedral-battle-4k.webp" width="280" alt="Cathedral Battle" /> | <img src="backgrounds/13-battle-barge-broadside-4k.webp" width="280" alt="Battle Barge Broadside" /> |
 | **14 · Black Templar Zealot** | **15 · Astartes Banner Glory** | **16 · Space Marine Duel** |
-| <img src="backgrounds/14-black-templar-zealot-4k.jpg" width="280" alt="Black Templar Zealot" /> | <img src="backgrounds/15-astartes-banner-glory-qhd.jpg" width="280" alt="Astartes Banner Glory" /> | <img src="backgrounds/16-space-marine-duel-qhd.jpg" width="280" alt="Space Marine Duel" /> |
+| <img src="backgrounds/14-black-templar-zealot-4k.webp" width="280" alt="Black Templar Zealot" /> | <img src="backgrounds/15-astartes-banner-glory-qhd.webp" width="280" alt="Astartes Banner Glory" /> | <img src="backgrounds/16-space-marine-duel-qhd.webp" width="280" alt="Space Marine Duel" /> |
 
 <details>
 <summary><b>View all 22+ included wallpapers</b></summary>
 <br>
 
-- `00-titus-righteous-stand.jpg`
-- `01-titus-close-up-cinematic.jpg`
-- `02-titus-fight-swarm-4k.jpg`
-- `03-space-marine-squad-4k.jpg`
-- `04-void-assault-4k.jpg`
-- `05-cathedral-battle-4k.jpg`
-- `06-space-marine-wrath-4k.jpg`
-- `07-astartes-battlefield.jpg`
-- `08-titus-portrait-glare.jpg`
-- `09-titus-combat-stance.png`
-- `10-secret-level-astartes-lineup.jpg`
-- `11-gothic-cathedral-void-4k.jpg`
-- `12-astartes-terminator-assault-4k.jpg`
-- `13-battle-barge-broadside-8k.jpg`
-- `14-black-templar-zealot-4k.jpg`
-- `15-astartes-banner-glory-qhd.jpg`
-- `16-space-marine-duel-qhd.jpg`
-- `17-titus-cinematic-ruins.jpg`
-- `18-sm2-hive-city-overlook.jpg`
-- `19-sm2-swarms-incoming.jpg`
-- `20-sm2-demetrian-titus-advance.jpg`
-- `21-sm2-orbital-descent.jpg`
+- `00-titus-righteous-stand.webp`
+- `01-titus-close-up-cinematic.webp`
+- `02-titus-fight-swarm-4k.webp`
+- `03-space-marine-squad-4k.webp`
+- `04-void-assault-4k.webp`
+- `05-cathedral-battle-4k.webp`
+- `06-space-marine-wrath-4k.webp`
+- `07-astartes-battlefield.webp`
+- `08-titus-portrait-glare.webp`
+- `09-titus-combat-stance.webp`
+- `10-secret-level-astartes-lineup.webp`
+- `11-gothic-cathedral-void-4k.webp`
+- `12-astartes-terminator-assault-4k.webp`
+- `13-battle-barge-broadside-4k.webp`
+- `14-black-templar-zealot-4k.webp`
+- `15-astartes-banner-glory-qhd.webp`
+- `16-space-marine-duel-qhd.webp`
+- `17-titus-cinematic-ruins.webp`
+- `18-sm2-hive-city-overlook.webp`
+- `19-sm2-swarms-incoming.webp`
+- `20-sm2-demetrian-titus-advance.webp`
+- `21-sm2-orbital-descent.webp`
 
 Add your own custom wallpapers anytime by dropping images directly into `backgrounds/`—Omarchy discovers and fits them automatically.
 </details>
